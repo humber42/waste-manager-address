@@ -30,7 +30,7 @@ import java.util.Date;
 @EntityListeners( AuditingEntityListener.class )
 public class WasteManagerAddressEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name="direccion")
     private String direccion;
